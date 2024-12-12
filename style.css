@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    height: 160vh;
+    background-image: url(fondo2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    margin: 10;
+    padding: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+header {
+    background-color: pink;
+    width: 84%;
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 20px 0;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.photo img {
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    border: 4px solid #ccc;
+    flex-shrink: 0;
+}
+
+h1 {
+    font-size: 6rem;
+    /* Más grande que los títulos de secciones */
+    text-align: center;
+    flex-grow: 1;
+    margin: 0;
+    color: #333;
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 20px 0;
+    gap: 20px;
+    max-width: 1200px;
+}
+
+/* Left Section */
+.left {
+    flex: 1;
+    background-color: aquamarine;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    min-width: 280px;
+}
+
+.left h2 {
+    font-size: 1.5rem;
+    /* Títulos más pequeños que el nombre */
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.left ul {
+    list-style: none;
+    padding: 0;
+}
+
+.left li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.left li img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Right Section */
+.right {
+    flex: 2;
+    background-color: powderblue;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    min-width: 280px;
+}
+
+.right h2 {
+    font-size: 1.5rem;
+    /* Títulos más pequeños que el nombre */
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    header .profile {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .photo img {
+        width: 120px;
+        height: 120px;
+    }
+}
